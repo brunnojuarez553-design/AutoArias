@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="description" content="AutoArias — vehículos seleccionados, financiación, permutas y atención personalizada en Ushuaia." />
+  <meta name="theme-color" content="#070707" />
+  <title>AutoArias | Concesionaria en Ushuaia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="video" href="https://res.cloudinary.com/dgp7uhps3/video/upload/v1786421024/InDown_ik0lhx.mp4" type="video/mp4">
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <style>
+    /* Navbar V14 — negro premium + navegación blanca */
+    .site-header{
+      background:rgba(5,5,5,.96)!important;
+      border-bottom:1px solid rgba(255,255,255,.08)!important;
+      box-shadow:0 10px 35px rgba(0,0,0,.18)!important;
+      backdrop-filter:blur(18px)!important;
+      -webkit-backdrop-filter:blur(18px)!important;
+    }
+    .desktop-nav a{
+      color:#fff!important;
+    }
+    .desktop-nav a:hover{
+      color:#ef3340!important;
+    }
+    .site-header .btn-ghost{
+      background:transparent!important;
+      color:#fff!important;
+      border-color:rgba(255,255,255,.18)!important;
+    }
+    .site-header .btn-ghost:hover{
+      background:rgba(255,255,255,.08)!important;
+      border-color:rgba(255,255,255,.30)!important;
+    }
+    .site-header .menu-btn{
+      background:#111!important;
+      border-color:rgba(255,255,255,.14)!important;
+    }
+    .site-header .menu-btn span{
+      background:#fff!important;
+    }
+    .site-header .brand-logo{
+      filter:drop-shadow(0 4px 14px rgba(0,0,0,.38));
+    }
+  </style>
+</head>
+<body>
+  <div class="top-strip" aria-label="Servicios destacados">
+  <div class="top-strip-track">
+    <div class="top-strip-group">
+      <span>Financiación</span><i></i><span>Permuta</span><i></i><span>Atención directa</span><i></i>
+    </div>
+    <div class="top-strip-group" aria-hidden="true">
+      <span>Financiación</span><i></i><span>Permuta</span><i></i><span>Atención directa</span><i></i>
+    </div>
+    <div class="top-strip-group" aria-hidden="true">
+      <span>Financiación</span><i></i><span>Permuta</span><i></i><span>Atención directa</span><i></i>
+    </div>
+  </div>
+</div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="AutoArias">
+      <img class="brand-logo autoarias-logo" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1786419876/IMG_0295_nfan6q_1_gd605c.png" alt="AutoArias" />
+    </a>
+    <nav class="desktop-nav">
+      <a href="#inventario">Inventario</a>
+      <a href="#financiación">Financiación</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost desktop-only" href="admin.html">Panel</a>
+      <a class="btn btn-primary desktop-only" href="https://wa.me/5492901553973" target="_blank" rel="noopener">Hablar con un asesor</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="close-menu" id="closeMenu">×</button>
+    <div class="mobile-brand"><img class="mobile-logo" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1786419876/IMG_0295_nfan6q_1_gd605c.png" alt="AutoArias" /></div>
+    <a href="#inventario">Inventario</a>
+    <a href="#financiación">Financiación</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a href="admin.html">Panel de inventario</a>
+    <a class="btn btn-primary" href="https://wa.me/5492901553973">Hablar por WhatsApp</a>
+  </aside>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" id="heroVideo" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-hidden="true">
+          <source src="https://res.cloudinary.com/dgp7uhps3/video/upload/v1786421024/InDown_ik0lhx.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="hero-kicker"><span class="live-dot"></span> Ushuaia · Tierra del Fuego · Inventario seleccionado</div>
+          <h1>Tu próximo auto.<br><em>Sin vueltas.</em></h1>
+          <p>Una experiencia moderna para descubrir, comparar y consultar vehículos en Ushuaia con atención directa de AutoArias.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#inventario">Ver inventario <b>→</b></a>
+          </div>
+          <div class="hero-trust hero-trust-clean">
+            <span><i></i> Inventario actualizado</span>
+            <span><i></i> Financiación disponible</span>
+            <span><i></i> Atención directa</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="hero-bottom container">
+        <span class="hero-bottom-label">Marcas que trabajamos</span>
+        <div class="brand-cloud"><span>HONDA</span><span>TOYOTA</span><span>MERCEDES-BENZ</span><span>LEXUS</span><span>HYUNDAI</span><span>MAZDA</span></div>
+      </div>
+    </section>
+
+    <section class="inventory-section" id="inventario">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Inventario</span>
+            <h2>Vehículos disponibles<br><span>ahora.</span></h2>
+          </div>
+          <div class="inventory-side">
+            <p>Unidades seleccionadas y listas para consultar. Abrí cada vehículo para ver sus detalles.</p>
+            <div class="inventory-controls">
+              <input type="search" id="inventorySearch" placeholder="Buscar marca, modelo o año" />
+              <select id="sortInventory"><option value="featured">Destacados</option><option value="priceAsc">Menor precio</option><option value="priceDesc">Mayor precio</option><option value="newest">Más nuevos</option></select>
+            </div>
+          </div>
+        </div>
+        <div class="inventory-system-bar reveal">
+          <div class="inventory-system-copy">
+            <span class="system-live"><i></i> INVENTARIO EN TIEMPO REAL</span>
+            <strong>Lo que ves acá se administra directamente desde el panel.</strong>
+            <small>Publicar, editar, destacar o marcar una unidad como vendida actualiza el catálogo del concesionario.</small>
+          </div>
+          <div class="inventory-system-count"><strong id="availableCount">0</strong><span>vehículos disponibles</span></div>
+          <a class="inventory-system-link" href="admin.html">Ver panel <b>↗</b></a>
+        </div>
+        <div class="inventory-grid" id="inventoryGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <span class="empty-icon">⌕</span>
+          <h3>No encontramos coincidencias</h3>
+          <p>Guardá tu búsqueda y te avisamos cuando ingrese una unidad compatible.</p>
+          <button class="btn btn-primary" id="openAlert">Crear alerta</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="vehicle-request-section" id="busqueda-personalizada">
+      <div class="container vehicle-request-shell reveal">
+        <div class="vehicle-request-copy">
+          <span class="eyebrow light">Búsqueda personalizada</span>
+          <h2>¿No encontraste el vehículo que buscabas?</h2>
+          <p>Decinos qué querés y dejamos registrada tu búsqueda para continuarla directamente por WhatsApp.</p>
+          <div class="request-trust"><span>01 · Sin compromiso</span><span>02 · Atención directa</span><span>03 · Búsqueda personalizada</span></div>
+        </div>
+        <form class="vehicle-request-form" id="vehicleRequestForm">
+          <label><span>Marca</span><input id="requestBrand" type="text" placeholder="Ej. Honda" required></label>
+          <label><span>Modelo</span><input id="requestModel" type="text" placeholder="Ej. CR-V" required></label>
+          <label><span>Presupuesto</span><input id="requestBudget" type="text" placeholder="Ej. $ 35.000.000"></label>
+          <button class="btn btn-primary btn-block" type="submit">Avisarme cuando llegue <b>→</b></button>
+          <small>La consulta se prepara automáticamente para enviarla al equipo de AutoArias.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="experience-band">
+      <div class="container experience-row">
+        <span>SELECCIÓN</span><i></i><span>FINANCIACIÓN</span><i></i><span>PERMUTA</span><i></i><span>ATENCIÓN DIRECTA</span>
+      </div>
+    </section>
+
+    <section class="finance-section" id="financiación">
+      <div class="finance-glow"></div>
+      <div class="container finance-layout">
+        <div class="finance-copy reveal">
+          <span class="eyebrow light">Financiación</span>
+          <h2>Tu próximo vehículo puede estar más cerca de lo que pensás.</h2>
+          <p>Calculá una financiación más realista en pesos argentinos: precio, anticipo, plazo, tasa y sistema francés. La simulación muestra una primera cuota aproximada y el monto total proyectado.</p>
+          <div class="finance-points">
+            <div><b>01</b><span>Elegí el valor del vehículo en ARS</span></div>
+            <div><b>02</b><span>Definí anticipo y plazo estimado</span></div>
+            <div><b>03</b><span>Consultá alternativas bancarias y prendarias</span></div>
+          </div>
+        </div>
+        <div class="finance-card finance-card-real reveal delay-1">
+          <div class="finance-card-head"><span>Cotizador</span><small>Sistema francés · ARS</small></div>
+
+          <label class="finance-select-label">Referencia de financiación
+            <select id="financeProfile" class="finance-profile-select">
+              <option value="bnaSalary">BNA +Autos · cliente haberes</option>
+              <option value="bnaOpen">BNA +Autos · cartera abierta</option>
+              <option value="custom">Otra tasa / simulación personalizada</option>
+            </select>
+          </label>
+
+          <div class="custom-rate-wrap" id="customRateWrap" hidden>
+            <label>TNA de referencia <strong id="customRateLabel">55,0%</strong></label>
+            <input id="customRate" type="range" min="20" max="100" step="0.5" value="55" />
+          </div>
+
+          <label>Precio del vehículo <strong id="vehiclePriceLabel">$ 42.000.000</strong></label>
+          <input type="range" id="vehiclePrice" min="5000" max="120000" step="500" value="42000" />
+          <label>Anticipo <strong id="downPaymentLabel">$ 7.000.000</strong></label>
+          <input type="range" id="downPayment" min="0" max="42000" step="500" value="7000" />
+          <label>Plazo <strong id="monthsLabel">60 meses</strong></label>
+          <input type="range" id="months" min="12" max="72" step="12" value="60" />
+
+          <div class="finance-summary-grid">
+            <div><span>Monto a financiar</span><strong id="financePrincipal">$ 35.000.000</strong></div>
+            <div><span>TNA</span><strong id="financeTna">36,00%</strong></div>
+            <div><span>TEA</span><strong id="financeTea">42,58%</strong></div>
+            <div><span>CFT TEA</span><strong id="financeCft">53,40%</strong></div>
+          </div>
+
+          <div class="estimate estimate-real"><span>Primera cuota estimada</span><strong id="monthlyEstimate">$ 0</strong><small id="financeEstimateNote">Incluye IVA estimado sobre intereses. No incluye seguro, sellos, patentamiento ni otros gastos.</small></div>
+          <div class="finance-total-row"><span>Total estimado del plan*</span><strong id="financeTotal">$ 0</strong></div>
+          <p class="finance-legal-note" id="financeLegalNote">Referencia BNA +Autos para cliente haberes. Aplicable únicamente según condiciones vigentes y en concesionarias adheridas. Sujeto a análisis crediticio.</p>
+          <a class="btn btn-primary btn-block" id="financeWhatsApp" target="_blank" rel="noopener">Consultar financiación <b>→</b></a>
+        </div>
+      </div>
+      <div class="container finance-bank-strip reveal">
+        <article class="finance-bank-card">
+          <span class="eyebrow light">Banco Nación</span>
+          <h3>+Autos con BNA</h3>
+          <p>Financiación en pesos, hasta el 100% del valor del vehículo y plazos de hasta 72 meses en concesionarias adheridas.</p>
+        </article>
+        <article class="finance-bank-card">
+          <span class="eyebrow light">Galicia</span>
+          <h3>Préstamo prendario</h3>
+          <p>Hasta el 80% del valor del vehículo, montos de hasta $57.000.000 y devolución en hasta 60 cuotas, sujeto a calificación.</p>
+        </article>
+        <article class="finance-bank-card">
+          <span class="eyebrow light">Santander</span>
+          <h3>Prendario tradicional</h3>
+          <p>Financiación de hasta el 80% del vehículo, con plazos de hasta 60 meses y opciones para 0 km y usados.</p>
+        </article>
+        <article class="finance-bank-card">
+          <span class="eyebrow light">BBVA</span>
+          <h3>Prendarios autos</h3>
+          <p>Opciones en pesos para autos 0 km y usados de hasta 9 años, con plazos de 12 a 60 meses.</p>
+        </article>
+      </div>
+      <div class="container finance-disclaimer reveal">
+        <small>Información orientativa basada en productos publicados por entidades bancarias en Argentina. Las condiciones pueden variar según banco, perfil del solicitante, vehículo y vigencia comercial.</small>
+      </div>
+    </section>
+
+    <section class="services-section" id="servicios">
+      <div class="container">
+        <div class="section-head services-head">
+          <div><span class="eyebrow">Experiencia AutoArias</span><h2>Todo lo necesario para avanzar.</h2></div>
+          <p>Soluciones pensadas para comprar, financiar, permutar o encontrar tu próxima unidad en Tierra del Fuego.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-no">01</div><div class="service-line"></div><h3>Compra & financiación</h3><p>Descubrí unidades y evaluá una referencia de pago mensual desde el mismo sitio.</p><a href="#inventario">Explorar inventario <span>→</span></a></article>
+          <article class="service-card featured-service"><div class="service-no">02</div><div class="service-line"></div><h3>Permuta</h3><p>Tomamos tu vehículo en parte de pago sujeto a evaluación y te acompañamos durante todo el proceso.</p><a href="https://wa.me/5492901553973?text=Hola%2C%20quiero%20cotizar%20mi%20veh%C3%ADculo%20para%20permuta">Cotizar mi permuta <span>→</span></a></article>
+          <article class="service-card"><div class="service-no">03</div><div class="service-line"></div><h3>Búsqueda personalizada</h3><p>Decinos qué necesitás. Si hoy no está en stock, dejamos registrada tu búsqueda.</p><a href="#busqueda-personalizada">Crear búsqueda <span>→</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="nosotros">
+      <div class="container story-grid">
+        <div class="story-media story-video-media reveal" id="openStoryVideo" role="button" tabindex="0" aria-label="Ver video de AutoArias en pantalla completa con sonido">
+          <video class="story-video" id="storyInlineVideo" autoplay muted loop playsinline webkit-playsinline preload="metadata" aria-label="AutoArias en Ushuaia">
+            <source src="https://res.cloudinary.com/dgp7uhps3/video/upload/v1786420072/InDown_anujrp.mp4" type="video/mp4">
+          </video>
+          <div class="story-video-shade"></div>
+          <div class="story-play-cta"><span class="story-play-icon">▶</span><div><strong>Ver video</strong><small>Pantalla completa · con sonido</small></div></div>
+          <div class="story-badge"><span class="live-dot"></span> AutoArias · Ushuaia</div>
+        </div>
+        <div class="story-copy reveal delay-1">
+          <span class="eyebrow">Nuestra identidad</span>
+          <h2>Concesionaria local.<br><span>Atención directa.</span></h2>
+          <p>Una concesionaria de Ushuaia enfocada en compra, venta, permuta, consignación y asesoramiento personalizado para encontrar la unidad indicada.</p>
+          <div class="quote">“Tu próxima unidad, más cerca.”</div>
+          <div class="story-actions">
+            <a class="btn btn-dark" href="https://instagram.com/auto_arias" target="_blank" rel="noopener">Ver Instagram</a>
+            <a class="story-link" href="#inventario">Ver vehículos <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="contact-section" id="contacto">
+      <div class="container contact-shell">
+        <div class="contact-info reveal">
+          <span class="eyebrow">Contacto & ubicación</span>
+          <h2>Visitá AutoArias en Ushuaia.</h2>
+          <p class="contact-lead">Conocé nuestro inventario en persona o escribinos para consultar disponibilidad, financiación, permutas y consignaciones.</p>
+
+          <div class="contact-list">
+            <a class="contact-item" href="tel:+5492901553973">
+              <span class="contact-icon">01</span>
+              <span><small>WhatsApp / Teléfono</small><strong>+54 9 2901 55-3973</strong></span>
+              <b>↗</b>
+            </a>
+            <a class="contact-item" href="mailto:autoarias.info@gmail.com">
+              <span class="contact-icon">02</span>
+              <span><small>Email</small><strong>autoarias.info@gmail.com</strong></span>
+              <b>↗</b>
+            </a>
+            <a class="contact-item" href="https://instagram.com/auto_arias" target="_blank" rel="noopener">
+              <span class="contact-icon">03</span>
+              <span><small>Instagram</small><strong>@auto_arias</strong></span>
+              <b>↗</b>
+            </a>
+          </div>
+
+          <div class="contact-location">
+            <span class="location-dot"></span>
+            <div>
+              <small>Ubicación</small>
+              <strong>Hipólito Yrigoyen 2383, V9410 Ushuaia, Tierra del Fuego, Argentina</strong>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-lg" href="https://wa.me/5492901553973" target="_blank" rel="noopener">Hablar con un asesor</a>
+            <a class="btn btn-ghost btn-lg map-link" href="https://www.google.com/maps/search/?api=1&query=Hip%C3%B3lito+Yrigoyen+2383%2C+Ushuaia%2C+Tierra+del+Fuego" target="_blank" rel="noopener">Cómo llegar <b>↗</b></a>
+          </div>
+        </div>
+
+        <div class="contact-map reveal delay-1">
+          <div class="map-topline"><span>Concesionaria</span><strong>AutoArias</strong></div>
+          <iframe title="Ubicación AutoArias" src="https://www.google.com/maps?q=Hip%C3%B3lito%20Yrigoyen%202383%2C%20Ushuaia%2C%20Tierra%20del%20Fuego%2C%20Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <a class="map-overlay-link" href="https://www.google.com/maps/search/?api=1&query=Hip%C3%B3lito+Yrigoyen+2383%2C+Ushuaia%2C+Tierra+del+Fuego" target="_blank" rel="noopener"><span>Abrir en Google Maps</span><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-card">
+        <div class="cta-copy"><span class="eyebrow light">Contacto directo</span><h2>¿Ya sabés qué estás buscando?</h2><p>Contanos modelo, presupuesto o preferencia y continuamos la conversación por WhatsApp.</p></div>
+        <a class="btn btn-light btn-lg" href="https://wa.me/5492901553973" target="_blank" rel="noopener">Hablar con un asesor <b>→</b></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand-block"><a class="brand footer-brand" href="#inicio"><img class="brand-logo autoarias-logo" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1786419876/IMG_0295_nfan6q_1_gd605c.png" alt="AutoArias" /></a><p>Concesionaria en Ushuaia, financiación y atención personalizada.</p></div>
+      <div><h4>Explorar</h4><a href="#inventario">Inventario</a><a href="#financiación">Financiación</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></div>
+      <div><h4>Contacto</h4><a href="tel:+5492901553973">+54 9 2901 55-3973</a><a href="mailto:autoarias.info@gmail.com">autoarias.info@gmail.com</a><a href="https://instagram.com/auto_arias">@auto_arias</a></div>
+      <div><h4>Administración</h4><a href="admin.html">Ingresar al panel</a><span>Inventario editable</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 AutoArias</span><span>Diseño y desarrollo por Austral Web Studio</span></div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5492901553973" target="_blank" aria-label="WhatsApp">
+    <span class="wa-label">Hablar por WhatsApp</span>
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M19.11 17.33c-.29-.15-1.72-.85-1.99-.95-.26-.1-.46-.15-.65.15-.19.29-.75.95-.92 1.15-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.35-1.43-.87-.78-1.46-1.75-1.63-2.04-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.16-.23-.55-.46-.47-.65-.48h-.55c-.19 0-.51.07-.77.36-.26.29-1.01.99-1.01 2.41s1.03 2.79 1.17 2.98c.15.19 2.02 3.08 4.9 4.32.68.29 1.21.46 1.62.58.68.22 1.3.19 1.79.12.55-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.56-.34Z"/>
+      <path d="M16.02 3.2c-7.03 0-12.74 5.67-12.74 12.66 0 2.23.59 4.41 1.71 6.33L3.2 28.8l6.8-1.77a12.82 12.82 0 0 0 6.02 1.53h.01c7.02 0 12.77-5.67 12.77-12.67 0-3.39-1.32-6.58-3.73-8.96A12.67 12.67 0 0 0 16.02 3.2Zm0 23.22h-.01a10.7 10.7 0 0 1-5.44-1.49l-.39-.23-4.03 1.05 1.08-3.93-.25-.4a10.47 10.47 0 0 1-1.62-5.56c0-5.79 4.77-10.5 10.65-10.5 2.84 0 5.51 1.1 7.51 3.08a10.4 10.4 0 0 1 3.14 7.42c0 5.79-4.78 10.5-10.64 10.5Z"/>
+    </svg>
+  </a>
+
+  <dialog class="story-video-modal" id="storyVideoModal" aria-label="Video AutoArias">
+    <button class="story-video-close" id="closeStoryVideo" type="button" aria-label="Cerrar video">×</button>
+    <div class="story-video-modal-stage">
+      <video id="storyFullscreenVideo" controls playsinline webkit-playsinline preload="metadata">
+        <source src="https://res.cloudinary.com/dgp7uhps3/video/upload/v1786420072/InDown_anujrp.mp4" type="video/mp4">
+      </video>
+    </div>
+  </dialog>
+
+  <dialog class="vehicle-modal" id="vehicleModal"><button class="modal-close" data-close-modal>×</button><div id="vehicleModalContent"></div></dialog>
+
+  <dialog class="finder-modal" id="alertModal"><button class="modal-close" data-close-alert>×</button><div class="modal-form"><span class="eyebrow">Alerta de inventario</span><h2>Te avisamos cuando llegue</h2><label>Nombre<input id="alertName" type="text" placeholder="Tu nombre" /></label><label>WhatsApp<input id="alertPhone" type="tel" placeholder="Tu número" /></label><label>Qué buscás<textarea id="alertQuery" placeholder="Marca, modelo, presupuesto, año..."></textarea></label><button class="btn btn-primary btn-block" id="alertSubmit">Guardar búsqueda</button></div></dialog>
+
+  <script>
+    (() => {
+      const video = document.getElementById('heroVideo');
+      if (video) {
+        video.muted = true;
+        video.defaultMuted = true;
+        video.playsInline = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+        video.setAttribute('webkit-playsinline', '');
+
+        const directVideo = 'https://res.cloudinary.com/dgp7uhps3/video/upload/v1786421024/InDown_ik0lhx.mp4';
+        const startVideo = () => {
+          video.muted = true;
+          video.defaultMuted = true;
+          const promise = video.play();
+          if (promise && typeof promise.catch === 'function') promise.catch(() => {});
+        };
+        const ensureVideoSource = () => {
+          const current = video.currentSrc || video.querySelector('source')?.src || '';
+          if (!current.includes('InDown_ik0lhx.mp4')) {
+            video.src = directVideo;
+          }
+          if (video.networkState === HTMLMediaElement.NETWORK_EMPTY || video.readyState === 0) video.load();
+          startVideo();
+        };
+
+        video.addEventListener('loadeddata', startVideo, { once: true });
+        video.addEventListener('canplay', startVideo, { once: true });
+        video.addEventListener('error', () => {
+          if (video.src !== directVideo) {
+            video.src = directVideo;
+            video.load();
+            startVideo();
+          }
+        }, { once: true });
+
+        ensureVideoSource();
+        document.addEventListener('DOMContentLoaded', ensureVideoSource, { once: true });
+        window.addEventListener('pageshow', ensureVideoSource);
+        ['touchstart', 'pointerdown'].forEach(eventName => {
+          window.addEventListener(eventName, startVideo, { once: true, passive: true });
+        });
+        document.addEventListener('visibilitychange', () => {
+          if (!document.hidden) ensureVideoSource();
+        });
+      }
+
+      const header = document.querySelector('.site-header');
+      if (!header) return;
+      let lastY = window.scrollY;
+      let ticking = false;
+      const updateHeader = () => {
+        const currentY = window.scrollY;
+        if (currentY <= 20 || currentY < lastY) header.classList.remove('nav-hidden');
+        else if (currentY > lastY && currentY > 110) header.classList.add('nav-hidden');
+        lastY = Math.max(currentY, 0);
+        ticking = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!ticking) { window.requestAnimationFrame(updateHeader); ticking = true; }
+      }, { passive: true });
+    })();
+  </script>
+  <script>
+    (() => {
+      const trigger = document.getElementById('openStoryVideo');
+      const modal = document.getElementById('storyVideoModal');
+      const fullVideo = document.getElementById('storyFullscreenVideo');
+      const inlineVideo = document.getElementById('storyInlineVideo');
+      const closeBtn = document.getElementById('closeStoryVideo');
+      if (!trigger || !modal || !fullVideo) return;
+
+      const openVideo = () => {
+        if (inlineVideo) inlineVideo.pause();
+        fullVideo.currentTime = inlineVideo?.currentTime || 0;
+        fullVideo.muted = false;
+        fullVideo.volume = 1;
+        modal.showModal();
+        const playPromise = fullVideo.play();
+        if (playPromise && typeof playPromise.catch === 'function') playPromise.catch(() => {});
+      };
+
+      const closeVideo = () => {
+        fullVideo.pause();
+        if (modal.open) modal.close();
+        if (inlineVideo) {
+          inlineVideo.currentTime = fullVideo.currentTime || inlineVideo.currentTime;
+          inlineVideo.muted = true;
+          const resume = inlineVideo.play();
+          if (resume && typeof resume.catch === 'function') resume.catch(() => {});
+        }
+      };
+
+      trigger.addEventListener('click', openVideo);
+      trigger.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openVideo();
+        }
+      });
+      closeBtn?.addEventListener('click', closeVideo);
+      modal.addEventListener('click', event => {
+        if (event.target === modal) closeVideo();
+      });
+      modal.addEventListener('cancel', event => {
+        event.preventDefault();
+        closeVideo();
+      });
+      modal.addEventListener('close', () => {
+        if (!fullVideo.paused) fullVideo.pause();
+      });
+    })();
+  </script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

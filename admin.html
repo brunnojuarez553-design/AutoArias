@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090909" />
+  <title>Inventory OS | AutoArias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="admin-body">
+  <aside class="admin-sidebar">
+    <a class="brand admin-brand" href="index.html"><img class="brand-logo autoarias-logo" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1786419876/IMG_0295_nfan6q_1_gd605c.png" alt="AutoArias" /></a>
+    <div class="admin-section-label">Workspace</div>
+    <nav><button class="active"><span>▦</span> Inventario</button><button><span>◌</span> Consultas</button><button><span>◇</span> Financiación</button><button><span>↗</span> Estadísticas</button></nav>
+    <div class="admin-profile"><div class="admin-avatar">AA</div><div><strong>Administrador</strong><small>Demo local</small></div></div>
+    <a class="btn btn-ghost admin-public-btn" href="index.html">Ver sitio público ↗</a>
+  </aside>
+  <main class="admin-main">
+    <header class="admin-topbar admin-topbar-pro">
+      <div>
+        <div class="admin-welcome-row"><span class="eyebrow">Inventory OS</span><span class="admin-online"><i></i> Catálogo sincronizado</span></div>
+        <h1>Bienvenido, AutoArias.</h1>
+        <p>Tu inventario está actualizado. Gestioná lo que aparece en la web desde un solo lugar.</p>
+      </div>
+      <button class="btn btn-primary admin-publish-btn" id="addVehicleBtn"><span>+</span> Publicar vehículo</button>
+    </header>
+    <section class="dashboard-stats">
+      <article><div class="stat-head"><span>Publicados</span><b>01</b></div><strong id="statPublished">0</strong><small>Total en catálogo</small></article>
+      <article><div class="stat-head"><span>Disponibles</span><b>02</b></div><strong id="statAvailable">0</strong><small>Listos para consultar</small></article>
+      <article><div class="stat-head"><span>Vendidos</span><b>03</b></div><strong id="statSold">0</strong><small>Unidades cerradas</small></article>
+      <article><div class="stat-head"><span>Destacados</span><b>04</b></div><strong id="statFeatured">0</strong><small>Prioridad visual</small></article>
+    </section>
+    <section class="admin-command-bar">
+      <div><span class="command-dot"></span><strong>Sitio público conectado</strong><small>Los cambios realizados acá se reflejan en el catálogo de la demo.</small></div>
+      <a href="index.html#inventario" target="_blank">Abrir inventario <b>↗</b></a>
+    </section>
+    <section class="admin-card">
+      <div class="admin-card-head"><div><span class="admin-card-kicker">CATÁLOGO</span><h2>Vehículos</h2></div><div class="admin-search-wrap"><span>⌕</span><input id="adminSearch" type="search" placeholder="Buscar vehículo" /></div></div>
+      <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Vehículo</th><th>Precio</th><th>Estado</th><th>Destacado</th><th>Acciones</th></tr></thead><tbody id="adminInventory"></tbody></table></div>
+    </section>
+  </main>
+
+  <dialog class="admin-dialog" id="vehicleFormDialog">
+    <form method="dialog" id="vehicleForm">
+      <button type="button" class="modal-close" id="closeVehicleForm">×</button>
+      <span class="eyebrow">Gestión de inventario</span>
+      <h2 id="formTitle">Agregar vehículo</h2>
+      <p class="dialog-intro">Completá la información que querés mostrar en el catálogo público.</p>
+      <input type="hidden" id="vehicleId" />
+      <div class="form-grid">
+        <label>Marca<input id="vehicleBrand" required /></label>
+        <label>Modelo<input id="vehicleModel" required /></label>
+        <label>Año<input id="vehicleYear" type="number" required /></label>
+        <label>Precio (ARS)<input id="vehiclePriceInput" type="number" placeholder="Opcional" /></label>
+        <label>Tipo<select id="vehicleTypeInput"><option>SUV</option><option>Sedán</option><option>Pickup</option><option>Deportivo</option></select></label>
+        <label>Kilometraje<input id="vehicleMileage" placeholder="Ej. 48.000 km" /></label>
+        <label>Transmisión<input id="vehicleTransmission" placeholder="Automática" /></label>
+        <label>Color<input id="vehicleColor" /></label>
+        <label class="full">Fotos del vehículo<textarea id="vehicleImage" placeholder="Pegá una o varias URLs de las fotos, una por línea"></textarea><small class="field-help">La primera foto se usa como portada. El resto aparece en la galería. Podés cargarlas más adelante.</small></label>
+        <label class="full">Descripción<textarea id="vehicleDescription" placeholder="Descripción breve del vehículo"></textarea></label>
+      </div>
+      <div class="switch-row"><label><input id="vehicleFeatured" type="checkbox" /> Destacado</label><label><input id="vehicleSold" type="checkbox" /> Vendido</label></div>
+      <button class="btn btn-primary btn-block" type="submit">Guardar vehículo</button>
+    </form>
+  </dialog>
+
+  <script src="assets/admin.js"></script>
+</body>
+</html>
